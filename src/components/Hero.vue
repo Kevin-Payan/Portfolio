@@ -12,9 +12,8 @@ export default {
     const textArray = [
       "Software Engineer",
       "Problem Solver",
-      "Tutor",
-      "Learner",
       "Freelancer",
+      "Learner",
       "lot of things...",
     ];
 
@@ -75,10 +74,8 @@ export default {
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap");
-
 :root {
-  --itim: "Itim", cursive;
+  --lato: "Lato", sans-serif;
   --dark: #1c1c1c;
   --light: #c4c4c4;
   --red: #00fbff;
@@ -86,7 +83,7 @@ export default {
 
 .typed-text {
   color: var(--red);
-  font-family: var(--itim);
+  font-family: var(--lato);
 }
 
 .cursor {

@@ -1,36 +1,17 @@
 <script>
-const links = document.querySelectorAll("a");
-
-links.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    event.target.classList.add("active");
-    setTimeout(() => {
-      event.target.classList.remove("active");
-    }, 500);
-  });
-});
+//Here goes the script xd
 </script>
 
 <template>
-  <div class="container">
-    <div class="buttons">
-      <a href="#" class="neon-button neon-button__3">Get to know me</a>
-    </div>
+  <div class="flex justify-center">
+    <button class="neon-button neon-button__3">Get to know me</button>
   </div>
 </template>
 
 <style>
 :root {
-  --clr-three: rgb(43, 226, 205);
+  --clr-three: rgb(0, 255, 225);
   --clr-bg: #1d1e22;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
 }
 
 body {
@@ -44,30 +25,6 @@ body {
   overflow: hidden;
 }
 
-h1 {
-  color: white;
-}
-
-p {
-  margin-top: 1em;
-  color: white;
-}
-
-.container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .neon-button {
   font-size: 1rem;
 
@@ -78,20 +35,6 @@ p {
   margin: 2rem;
   border-radius: 0.25em;
   position: relative;
-}
-
-.neon-button__1 {
-  color: var(--clr-one);
-  border: var(--clr-one) 0.125em solid;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em --clr-one;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-one), 0 0 0.5em 0 var(--clr-one);
-}
-
-.neon-button__2 {
-  color: var(--clr-two);
-  border: var(--clr-two) 0.125em solid;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em --clr-two;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-two), 0 0 0.5em 0 var(--clr-two);
 }
 
 .neon-button__3 {
@@ -133,14 +76,6 @@ p {
   }
 }
 
-.neon-button__1::before {
-  background: var(--clr-one);
-}
-
-.neon-button__2::before {
-  background: var(--clr-two);
-}
-
 .neon-button__3::before {
   background: var(--clr-three);
 }
@@ -155,16 +90,6 @@ p {
   opacity: 0;
   z-index: -1;
   transition: opacity 100ms linear;
-}
-
-.neon-button__1::after {
-  box-shadow: 0 0 2em 0.5em var(--clr-one);
-  background-color: var(--clr-one);
-}
-
-.neon-button__2::after {
-  box-shadow: 0 0 2em 0.5em var(--clr-two);
-  background-color: var(--clr-two);
 }
 
 .neon-button__3::after {
