@@ -1,15 +1,19 @@
 <script>
+import NeonButton from "./NeonButton.vue";
+
 export default {
+  components: {
+    NeonButton,
+  },
   mounted() {
     const typedText = this.$el.querySelector(".typed-text");
     const cursor = this.$el.querySelector(".cursor");
 
     const textArray = [
       "Software Engineer",
-      "Full Stack Developer",
+      "Problem Solver",
       "Tutor",
       "Learner",
-      "Problem Solver",
       "Freelancer",
       "lot of things...",
     ];
@@ -57,15 +61,16 @@ export default {
 
 <template>
   <div
-    class="flex flex-col justify-center w-screen h-screen items-center bg-black"
+    class="flex flex-col justify-center w-screen h-screen items-center bg-gray-950"
   >
     <h1 class="text-4xl font-semibold text-white p-2">
-      Hello, I'm <span class="text-red-600">Kevin.</span>
+      Hello, I'm <span class="text-cyan-300">Kevin.</span>
     </h1>
     <p class="text-4xl font-semibold text-white">
       I'm a <span class="typed-text"></span
       ><span class="cursor blink">&nbsp;</span>
     </p>
+    <NeonButton />
   </div>
 </template>
 
@@ -76,7 +81,7 @@ export default {
   --itim: "Itim", cursive;
   --dark: #1c1c1c;
   --light: #c4c4c4;
-  --red: #ca172c;
+  --red: #00fbff;
 }
 
 .typed-text {
