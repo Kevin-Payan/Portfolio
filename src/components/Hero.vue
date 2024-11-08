@@ -60,13 +60,13 @@ export default {
 
 <template>
   <div
-    class="flex flex-col justify-center w-screen h-screen items-center bg-gray-950"
+    class="flex flex-col justify-center w-screen h-screen items-center bg-neutral-900"
   >
     <h1 class="text-4xl font-semibold text-white p-2">
-      Hello, I'm <span class="text-cyan-300">Kevin.</span>
+      Hello, I'm <span class="text-cyan-50">Kevin.</span>
     </h1>
     <p class="text-4xl font-semibold text-white">
-      I'm a <span class="typed-text"></span
+      I'm a <span class="typed-text font-sans"></span
       ><span class="cursor blink">&nbsp;</span>
     </p>
     <NeonButton />
@@ -75,22 +75,18 @@ export default {
 
 <style>
 :root {
-  --lato: "Lato", sans-serif;
-  --dark: #1c1c1c;
-  --light: #c4c4c4;
-  --red: #00fbff;
+  --cyan: rgb(0, 255, 255);
 }
 
 .typed-text {
-  color: var(--red);
-  font-family: var(--lato);
+  color: var(--cyan);
 }
 
 .cursor {
   display: inline-block;
   width: 3px;
   margin-left: 4px;
-  background: var(--red);
+  background: var(--cyan);
 }
 
 .cursor.blink {
@@ -100,7 +96,7 @@ export default {
 @keyframes blink {
   0%,
   100% {
-    background: var(--red);
+    background: var(--cyan);
   }
   40%,
   50% {
