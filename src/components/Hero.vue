@@ -60,7 +60,7 @@ export default {
 
 <template>
   <div
-    class="flex flex-col justify-center w-screen h-screen items-center bg-neutral-900"
+    class="flex flex-col justify-center w-screen h-screen items-center bg-zinc-850"
   >
     <h1 class="text-4xl font-semibold text-white p-2">
       Hello, I'm <span class="text-cyan-50">Kevin.</span>
